@@ -22,7 +22,7 @@ body {
 
 :root {
   --primary-color: #0066cc;
-  --secondary-color: #004d99;
+  --secondary-color: #0066cc;
   --text-color: #333333;
   --bg-color: #ffffff;
   --border-color: #cccccc;
@@ -126,6 +126,28 @@ header h1 {
   margin-bottom: 15px;
   font-size: 2rem;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* adjust based on your navbar height */
+}
+nav {
+    background-color: #0066cc; /* or your original color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
 
 nav ul {
   list-style: none;
