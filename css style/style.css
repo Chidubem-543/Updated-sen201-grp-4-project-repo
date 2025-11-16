@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 header{
@@ -8,11 +8,9 @@ header{
   align-items: center;
   justify-content: space-around;
 }
-nav li {
-  
-}
+
 body {
-  padding-top: 70px; /* offset for fixed navbar height */
+  padding-top: 0px; /* offset for fixed navbar height */
 }
 
 /* CSS Reset and Base Styles */
@@ -65,21 +63,7 @@ body.font-size-small {
   --font-size-base: 14px;
 }
 
-/* Skip Link for Keyboard Navigation */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--primary-color);
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  z-index: 1000;
-}
 
-.skip-link:focus {
-  top: 0;
-}
 
 /* Visually Hidden (for screen readers only) */
 .visually-hidden {

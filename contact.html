@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css style/style.css" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Accessibility Controls Bar -->
+    <div
+      class="accessibility-controls"
+      role="region"
+      aria-label="Accessibility controls"
+    >
+      <button
+        id="tts-toggle"
+        aria-pressed="false"
+        aria-label="Toggle text-to-speech"
+      >
+        <span aria-hidden="true">🔊</span> Text-to-Speech
+      </button>
+      
+      <button
+        id="high-contrast-toggle"
+        aria-pressed="false"
+        aria-label="Toggle high contrast mode"
+      >
+        <span aria-hidden="true">◐</span> High Contrast
+      </button>
+    </div>
+
+    <!-- Header with navigation -->
+    <header role="banner">
+      
+        <h1>EDU-BRIDGE</h1>
+        <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & Support</h2>
+        <p class="tts-content">
+          If you need assistance or have accessibility concerns, please reach
+          out to our support team.
+        </p>
+        <form action="/api/contact" method="POST" aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Name <span aria-label="required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email"
+              >Email <span aria-label="required">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message"
+              >Message <span aria-label="required">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+        <div
+          role="status"
+          aria-live="polite"
+          id="form-status"
+          class="visually-hidden"
+        ></div>
+      </section>
+
+
+      <!-- Footer -->
+    <footer role="contentinfo">
+      <p class="tts-content">
+        © 2025 Accessible Content Platform. Compliant with WCAG 2.1 AA
+        standards.
+      </p>
+      <p>
+        <a href="/admin">Admin Login</a>
+      </p>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+
+    <script src="js/home.js"></script>
+
+</body>
+</html>
